@@ -10,6 +10,10 @@ so all function of dlib's libjpeg should be blocked.
 
 In Korean environment, unicode decoding error occured.
 
+```
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb9 in position 27: invalid start byte
+```
+
 setup.py moified :
 
 ``` python
