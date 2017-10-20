@@ -18,7 +18,7 @@ void bind_rectangles();
 void bind_object_detection();
 void bind_shape_predictors();
 void bind_correlation_tracker();
-void bind_face_recognition();
+//void bind_face_recognition();
 void bind_cnn_face_detection();
 
 #ifndef DLIB_NO_GUI_SUPPORT
@@ -51,7 +51,7 @@ BOOST_PYTHON_MODULE(dlib)
     bind_object_detection();
     bind_shape_predictors();
     bind_correlation_tracker();
-    bind_face_recognition();
+    //bind_face_recognition();
     bind_cnn_face_detection();
 #ifndef DLIB_NO_GUI_SUPPORT
     bind_gui();
