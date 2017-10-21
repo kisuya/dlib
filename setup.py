@@ -273,7 +273,11 @@ def _log_buf(buf):
     if not buf:
         return
     if sys.stdout.encoding:
-        buf = buf.decode(sys.stdout.encoding)
+	    try:
+		    buf = buf.decode(sys.stdout.encoding)
+		except UnicodeDecodeError:
+		    print("Unicode decode error")
+			
     buf = buf.rstrip()
     lines = buf.splitlines()
     for line in lines:
